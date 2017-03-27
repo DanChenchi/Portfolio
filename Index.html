@@ -1,0 +1,184 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <link type="text/css" rel="stylesheet" href="css/materialize-custom.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body class="blue-grey lighten-4">
+	  
+		<nav class="red darken-4" role="navigation">
+			<div class="nav-wrapper container">
+				<a href="Index.html" id="logo" class="brand-logo"><i class="material-icons">home</i></a>
+				
+				<ul class="right hide-on-med-and-down">
+					<li><a href="#">Search</a></li>
+					<li><a href="#">About the author</a></li>
+					<li><a href="#">Albums</a></li>
+					<li><a href="#">Works and Plans</a></li>
+				</ul>
+				
+				<ul id="nav-mobile" class="side-nav">
+					<li><a href="#">Search</a></li>
+					<li><a href="#">About the author</a></li>
+					<li><a href="#">Albums</a></li>
+					<li><a href="#">Works and Plans</a></li>
+				</ul>
+				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+				
+			</div>
+				
+		</nav>
+		
+		<div class="container">
+		
+			<h1 class="center red-text text-darken-4">Website interfaces<br>and 3D mashes</h1>
+			<div class="row">
+				<div class="col s12 m6 offset-m3 l4 offset-l4 centered">
+						
+					<div class="row valign-wrapper">
+					
+						<div class="col s2 right">
+							<img src="imgs/me.jpg" alt="Dan Chenchi" class="circle responsive-img">
+						</div>
+						<div class="col s6 left">
+							<h5 class="header light">By Dan</h5>
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="section">
+				<div class="row" id="thumb-galley">
+					
+					<div class="col s4">
+						<div class="card small">
+							<div class="card-image">
+								<img class="materialboxed" data-caption="Happy Hour Cansei de fazer Programa!" src="imgs/Happy Hour Cansei de fazer Programa v1.5.PNG">
+								<span class="card-title">Happy Hour Cansei de fazer Programa!</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col s4">
+						<div class="card small">
+							<div class="card-image">
+								<img class="materialboxed" data-caption="Me" src="imgs/me.jpg">
+								<span class="card-title">Me</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col s4">
+						<div class="card small">
+							<div class="card-image">
+								<img class="materialboxed" data-caption="Battle against the Witchking" src="imgs/lotr wallpaper.jpg">
+							</div>
+							<div class="card-content">
+								<span class="card-title">Battle against the Witchking</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col s4">
+						<div class="card small">
+							<div class="card-image">
+								<img class="materialboxed" data-caption="The Fellowship" src="imgs/lotr wallpaper2.jpg">
+							</div>
+							<div class="card-content">
+								<span class="card-title">The Fellowship</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col s4">
+						<div class="card small">
+							<div class="card-image">
+								<img class="materialboxed" data-caption="Storm King's Thunder" src="imgs/StormGiant_Gallery_Thumb.jpg">
+							</div>
+							<div class="card-content">
+								<span class="card-title">Storm King's Thunder</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col s4">
+						<div class="card small">
+							<div class="card-image">
+								<img class="materialboxed" data-caption="The Red Squares" src="imgs/vermelho.png">
+								<span class="card-title">The Red Squares</span>
+							</div>
+						</div>
+					</div>
+				
+				</div> <!-- End Thumb Gallery -->
+			</div> <!-- End Section -->
+				
+			<div id="modal1" class="modal">
+				<div class="modal-content" id="modal-image">
+				</div>
+				<div class="modal-footer center" id="modal-title">
+				</div>
+			</div><!-- End Modal -->
+			
+		</div> <!-- End Container -->
+		
+		<footer class="page-footer white-text">
+		
+			<div class="container">
+				<div class="row">
+					
+					<div class="col s12 l6">
+						<h5>Footer</h5>
+					</div>
+					
+					<div class="col s12 l2 offset-l4">
+						<h5>Contact</h5>
+						<ul>
+							<li>G+</li>
+							<li>Twitter</li>
+							<li>GitHub</li>
+							<li>Linkedin</li>
+						</ul>
+					</div>
+					
+				</div> <!-- End Row -->
+			</div> <!-- End Container -->
+			
+			<div class="footer-copyright red darken-4">
+				
+				<div class="container">
+					<p class="white-text">© 2017 Copyright Text <span class="right">External link</span></p>
+				</div> <!-- End Container -->
+				
+			</div> <!-- End Footer Copyright -->
+		
+		</footer>
+		
+		<!--Scripts-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+	  
+		<script>
+		$(document).ready(function(){
+			// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+			$('.modal').modal();
+		
+		(function($){
+			$(function(){
+				$('.button-collapse').sideNav();
+				$('.materialboxed').materialbox();
+			}); // end of document ready
+		})(jQuery); // end of jQuery name space
+		</script>
+	</body>
+</html>
+        
