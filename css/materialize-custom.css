@@ -1,5 +1,3 @@
 .card.small .card-image, .card.medium .card-image, .card.large .card-image {
   max-height: 100%;
-  max-width: inherit !important;
-  overflow: hidden;
 }
