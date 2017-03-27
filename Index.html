@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
     <head>
       <!--Import Google Icon Font-->
@@ -33,12 +33,11 @@
 				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 				
 			</div>
-				
 		</nav>
-		
+
 		<div class="container">
-		
 			<h1 class="center red-text text-darken-4">Website interfaces<br>and 3D mashes</h1>
+			
 			<div class="row">
 				<div class="col s12 m6 offset-m3 l4 offset-l4 centered">
 						
@@ -55,70 +54,22 @@
 					
 				</div>
 			</div>
-			
+						
 			<div class="section">
 				<div class="row" id="thumb-galley">
 					
-					<div class="col s4">
-						<div class="card small">
-							<div class="card-image">
-								<img class="materialboxed" data-caption="Happy Hour Cansei de fazer Programa!" src="imgs/Happy Hour Cansei de fazer Programa v1.5.PNG">
-								<span class="card-title">Happy Hour Cansei de fazer Programa!</span>
-							</div>
-						</div>
-					</div>
+					<!-- Fixed Action Button -->
+					<div class="fixed-action-btn">
+						<a class="btn-floating btn-large red">
+							<i class="large material-icons">mode_edit</i>
+						</a>
+						<ul>
+							<li><a class="btn-floating red" onclick="addThumbnail('imgs/me.jpg', 'Me')"><i class="material-icons">wallpaper</i>Me</a></li>
+							<li><a class="btn-floating blue" onclick="addThumbnail('imgs/Skyrim.jpg', 'Skyrim')"><i class="material-icons">wallpaper</i>Skyrim</a></li>
+							<li><a class="btn-floating green" onclick="addThumbnail('imgs/vermelho.png', 'Vermelho')" ><i class="material-icons">wallpaper</i>Vermelho</a></li>
+						</ul>
+					</div> <!-- End Fixed Action Button -->
 					
-					<div class="col s4">
-						<div class="card small">
-							<div class="card-image">
-								<img class="materialboxed" data-caption="Me" src="imgs/me.jpg">
-								<span class="card-title">Me</span>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col s4">
-						<div class="card small">
-							<div class="card-image">
-								<img class="materialboxed" data-caption="Battle against the Witchking" src="imgs/lotr wallpaper.jpg">
-							</div>
-							<div class="card-content">
-								<span class="card-title">Battle against the Witchking</span>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col s4">
-						<div class="card small">
-							<div class="card-image">
-								<img class="materialboxed" data-caption="The Fellowship" src="imgs/lotr wallpaper2.jpg">
-							</div>
-							<div class="card-content">
-								<span class="card-title">The Fellowship</span>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col s4">
-						<div class="card small">
-							<div class="card-image">
-								<img class="materialboxed" data-caption="Storm King's Thunder" src="imgs/StormGiant_Gallery_Thumb.jpg">
-							</div>
-							<div class="card-content">
-								<span class="card-title">Storm King's Thunder</span>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col s4">
-						<div class="card small">
-							<div class="card-image">
-								<img class="materialboxed" data-caption="The Red Squares" src="imgs/vermelho.png">
-								<span class="card-title">The Red Squares</span>
-							</div>
-						</div>
-					</div>
-				
 				</div> <!-- End Thumb Gallery -->
 			</div> <!-- End Section -->
 				
@@ -156,7 +107,7 @@
 			<div class="footer-copyright red darken-4">
 				
 				<div class="container">
-					<p class="white-text">© 2017 Copyright Text <span class="right">External link</span></p>
+					<p class="white-text">Â© 2017 Copyright Text <span class="right">External link</span></p>
 				</div> <!-- End Container -->
 				
 			</div> <!-- End Footer Copyright -->
@@ -166,17 +117,13 @@
 		<!--Scripts-->
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script type="text/javascript" src="js/dan-portfolio.js"></script>
 	  
 		<script>
-		$(document).ready(function(){
-			// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-			$('.modal').modal();
-		
-		(function($){
-			$(function(){
-				$('.button-collapse').sideNav();
-				$('.materialboxed').materialbox();
-			}); // end of document ready
+		$(document).ready(function(){			
+			// material box 
+			$('.materialboxed').materialbox();
+			
 		})(jQuery); // end of jQuery name space
 		</script>
 	</body>
