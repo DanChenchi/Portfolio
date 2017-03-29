@@ -1,19 +1,23 @@
-  <!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
     <head>
+		<title>Code Strophes - By Dan</title>
+	
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 	  <link type="text/css" rel="stylesheet" href="css/materialize-custom.css"  media="screen,projection"/>
 
+	  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
-    <body class="blue-grey lighten-4">
+    <body>
 	  
-		<nav class="red darken-4" role="navigation">
+		<nav class="black" role="navigation">
 			<div class="nav-wrapper container">
 				<a href="Index.html" id="logo" class="brand-logo"><i class="material-icons">home</i></a>
 				
@@ -24,94 +28,172 @@
 					<li><a href="#">Works and Plans</a></li>
 				</ul>
 				
+				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 				<ul id="nav-mobile" class="side-nav">
 					<li><a href="#">Search</a></li>
 					<li><a href="#">About the author</a></li>
 					<li><a href="#">Albums</a></li>
 					<li><a href="#">Works and Plans</a></li>
 				</ul>
-				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 				
 			</div>
 		</nav>
+		
+		<!-- Fixed Action Button -->
+		<div class="fixed-action-btn">
+			<a class="btn-floating btn-large light-blue">
+				<i class="large material-icons" style="font-size:42px">account_circle</i>
+			</a>
+			<ul>
+				<li>
+					<a class="btn-floating blue darken-4" href="https://www.facebook.com/dan.chenchi" target="_blank"> <i class="fa fa-facebook"></i> </a>
+				</li>
+				<li>
+					<a class="btn-floating blue darken-2" href="https://www.linkedin.com/in/danchenchi/" target="_blank"> <i class="fa fa-linkedin"></i> </a>
+				</li>
+				<li>
+					<a class="btn-floating blue" href="https://twitter.com/DAN_ne_se" target="_blank"> <i class="fa fa-twitter"></i> </a>
+				</li>
+				<li>
+					<a class="btn-floating blue-grey darken-4" href="https://github.com/DanChenchi" target="_blank"><i class="fa fa-github"></i></a>
+				</li>
+			</ul>
+		</div> <!-- End Fixed Action Button -->
 
-		<div class="container">
-			<h1 class="center red-text text-darken-4">Website interfaces<br>and 3D mashes</h1>
-			
+		<!-- Introduction Section -->
+		<div class="section parallax-container" id="introduction">
+			<div class="parallax"><img src="imgs/Skyrim.jpg"></div>
+
+			<h1 class="center white-text">Code Strophes</h1>
+
+			<!-- <p class="flow-text center white-text">Strophes, verses, poems and some jokes in various languages - Programming languages</p> -->
+			<p class="flow-text center white-text">
+				Code not only works, but also communicate.<br>
+				Like a literary work, a code can also express the intentions and personality of its author.<br>
+				I believe that beautifully written codes can please the eye.
+			</p>
+
+			<br><br>
+
 			<div class="row">
-				<div class="col s12 m6 offset-m3 l4 offset-l4 centered">
-						
+				<div class="col s12 m6 offset-m3 l4 offset-l4">
+
 					<div class="row valign-wrapper">
-					
+
 						<div class="col s2 right">
 							<img src="imgs/me.jpg" alt="Dan Chenchi" class="circle responsive-img">
 						</div>
 						<div class="col s6 left">
-							<h5 class="header light">By Dan</h5>
+							<h3 class="header light white-text">By Dan</h3>
 						</div>
-						
+
 					</div>
-					
 				</div>
-			</div>
-						
-			<div class="section">
+			</div><!-- End Row -->
+
+		</div>
+
+		<!-- Gallery Section -->
+		<div class="section grey darken-3" id="gallery">
+			<div class="container">
+
 				<div class="row" id="thumb-galley">
 					
-					<!-- Fixed Action Button -->
-					<div class="fixed-action-btn">
-						<a class="btn-floating btn-large red">
-							<i class="large material-icons">mode_edit</i>
-						</a>
-						<ul>
-							<li><a class="btn-floating red" onclick="addThumbnail('imgs/me.jpg', 'Me')"><i class="material-icons">wallpaper</i>Me</a></li>
-							<li><a class="btn-floating blue" onclick="addThumbnail('imgs/Skyrim.jpg', 'Skyrim')"><i class="material-icons">wallpaper</i>Skyrim</a></li>
-							<li><a class="btn-floating green" onclick="addThumbnail('imgs/vermelho.png', 'Vermelho')" ><i class="material-icons">wallpaper</i>Vermelho</a></li>
-						</ul>
-					</div> <!-- End Fixed Action Button -->
-					
-				</div> <!-- End Thumb Gallery -->
-			</div> <!-- End Section -->
+					<!-- Test Card
+					<div class="col s4">
+						<div class="card">
+							<div class="card-image">
+								<img class="materialboxed" data-caption="Skyrim" src="imgs/Skyrim.jpg">
+								<span class="card-title">Skyrim</span>
+							</div>
+						</div>
+					</div>
+					<!-- End Test Card -->
 				
-			<div id="modal1" class="modal">
-				<div class="modal-content" id="modal-image">
+					<!-- The images Thumbnails goes here -->
 				</div>
-				<div class="modal-footer center" id="modal-title">
-				</div>
-			</div><!-- End Modal -->
-			
-		</div> <!-- End Container -->
-		
-		<footer class="page-footer white-text">
-		
+				
+			</div> <!-- End Container -->
+		</div><!-- End Gallery Section -->
+
+		<div class="section grey darken-2" id="resume">
 			<div class="container">
+
 				<div class="row">
-					
+
+					<br><br><br><br><br>
+
+					<div class="col s10 l8 grey darken-3 resume-left">
+						<h3>Design</h3>
+						<p class="flow-text">Material Design, Pixel Art, UX Focus</p>
+					</div>
+
+					<br><br><br><br><br><br><br><br><br><br>
+
+					<div class="col s10 l8 offset-s2 offset-l4 grey darken-3 resume-right">
+						<h3>Front-end</h3>
+						<p class="flow-text">HTML5, CSS3, Javascript, jQuery, WebGL</p>
+					</div>
+
+					<br><br><br><br><br><br><br><br><br><br>
+
+					<div class="col s10 l8 grey darken-3 resume-left">
+						<h3>Back-end</h3>
+						<p class="flow-text">Java, Python, C++</p>
+					</div>
+
+					<br><br><br><br><br><br><br><br><br><br>
+
+					<div class="col s10 l8 offset-s2 offset-l4 grey darken-3 resume-right">
+						<h3>Coding Design</h3>
+						<p class="flow-text">Readabillity, In-code Documentation</p>
+					</div>
+
+					<br><br><br><br><br><br><br><br><br><br>
+
+				</div>
+
+			</div>
+		</div>
+		
+		<div class="section grey darken-1" id="about-me">
+			<h1 class="center white-text">About Me</h1>
+		</div>
+
+		<footer class="page-footer white-text grey darken-3">
+
+			<div class="container">
+				<div class="row">		
 					<div class="col s12 l6">
-						<h5>Footer</h5>
+						<h5>Danilo Chenchi</h5>
+						
+						<div class="col s12">
+							<a href="#introduction" class="breadcrumb">Introduction</a>
+							<a href="#gallery" class="breadcrumb">Gallery</a>
+							<a href="#resume" class="breadcrumb">Resume</a>
+							<a href="#about-me" class="breadcrumb">About Me</a>
+						</div>
+
 					</div>
 					
 					<div class="col s12 l2 offset-l4">
 						<h5>Contact</h5>
 						<ul>
-							<li>G+</li>
-							<li>Twitter</li>
-							<li>GitHub</li>
-							<li>Linkedin</li>
+							<li><i class="material-icons" style="font-size: 16px">place</i> Sorocaba - SP, Brazil</li>
+							<li><i class="material-icons" style="font-size: 16px">email</i> dan.chenchi@gmail.com</li>
+							<li><i class="material-icons" style="font-size: 16px">phone</i> +55 15 99786-0571</li>
 						</ul>
 					</div>
 					
 				</div> <!-- End Row -->
 			</div> <!-- End Container -->
 			
-			<div class="footer-copyright red darken-4">
-				
+			<div class="footer-copyright grey darken-4">
 				<div class="container">
-					<p class="white-text">© 2017 Copyright Text <span class="right">External link</span></p>
+					<p class="white-text">© 2017 Copyright</p>
 				</div> <!-- End Container -->
-				
 			</div> <!-- End Footer Copyright -->
-		
+			
 		</footer>
 		
 		<!--Scripts-->
@@ -121,11 +203,16 @@
 	  
 		<script>
 		$(document).ready(function(){			
-			// material box 
+			// materialize: initialize parallax
+			$('.parallax').parallax();
+			
+			// materialize: material box 
 			$('.materialboxed').materialbox();
 			
-			// sidebar mobile navigation initialize
+			// materialize: initialize sidebar mobile navigation
 			$(".button-collapse").sideNav();
+			
+			initGallery();
 			
 		})(jQuery); // end of jQuery name space
 		</script>
