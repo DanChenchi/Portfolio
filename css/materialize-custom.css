@@ -1,3 +1,23 @@
-.card.small .card-image, .card.medium .card-image, .card.large .card-image {
-  max-height: 100%;
+.resume-left {
+	text-align: right;
+	color: white;
+	border-right: 5px solid #ffffff;
+}
+
+.resume-right {
+	text-align: left;
+	color: white;
+	border-left: 5px solid #ffffff;
+}
+
+.resume-left:hover {
+  opacity: .6;
+}
+
+.resume-right:hover {
+  opacity: .6;
+}
+
+.card .card-title {
+  font-size: .9em;
 }
