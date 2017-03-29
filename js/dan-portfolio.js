@@ -1,4 +1,36 @@
 /*
+	Author: Danilo de Moura Chenchi
+	
+	Require materialize css
+*/
+
+/* Each image have a respective title. So it's a 1-to-1 relation of the two arrays */
+var images_array = ["lotr wallpaper.jpg",
+					"You gonna love it HD.png",
+					"lotr wallpaper2.jpg",
+					"Rogue-One-A-Star-Wars-Story-2016-Wallpaper-03854.jpg",
+					"me.jpg",
+					"Skyrim.jpg",
+					"StormGiant_Gallery_Thumb.jpg",
+					"vermelho.png"];
+var titles_array = ["Battle against the Witchking",
+					"You gonna love IT",
+					"The Fellowship",
+					"Rogue One Death Trooper",
+					"Me",
+					"Skyrim",
+					"Storm King's Thunder",
+					"Red Squares"];
+
+/* Add all the images registered in the array to the gallery */
+function initGallery() {
+	var i = 0;
+	for (i = 0; i < images_array.length; i++) {
+		addThumbnail( images_array[i], titles_array[i]);
+	}
+}
+
+/*
 Thumbnail
 <div class="col s4">
 	<div class="card small">
@@ -11,7 +43,7 @@ Thumbnail
 	</div>
 </div>
 */
-function addThumbnail(image_path, title) {
+function addThumbnail(image_name, title) {
 // Initialize card divs
 	var column = $("<div></div>");
 	var card_small = $("<div></div>");
@@ -20,7 +52,8 @@ function addThumbnail(image_path, title) {
 
 // Add classes to style the card
 	column.addClass("col s4");
-	card_small.addClass("card small");
+	//card_small.addClass("card small");
+	card_small.addClass("card");
 	card_image.addClass("card-image");
 	card_content.addClass("card-content");
 
@@ -28,7 +61,7 @@ function addThumbnail(image_path, title) {
 	var thumb_image = $("<img>");
 	thumb_image.addClass("materialboxed");
 	thumb_image.attr("data-caption", title);
-	thumb_image.attr("src", image_path);
+	thumb_image.attr("src", "imgs/" + image_name);
 	
 	card_image.append(thumb_image);
 	
@@ -41,7 +74,6 @@ function addThumbnail(image_path, title) {
 
 // Structure the card html tree
 	card_small.append(card_image);
-	card_small.append(card_content);
 	column.append(card_small);
 	
 	$("#thumb-galley").append(column);
