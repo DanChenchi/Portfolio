@@ -9,18 +9,14 @@ var images_array = ["lotr wallpaper.jpg",
 					"You gonna love it HD.png",
 					"lotr wallpaper2.jpg",
 					"Rogue-One-A-Star-Wars-Story-2016-Wallpaper-03854.jpg",
-					"me.jpg",
 					"Skyrim.jpg",
-					"StormGiant_Gallery_Thumb.jpg",
-					"vermelho.png"];
+					"StormGiant_Gallery_Thumb.jpg"];
 var titles_array = ["Battle against the Witchking",
 					"You gonna love IT",
 					"The Fellowship",
 					"Rogue One Death Trooper",
-					"Me",
 					"Skyrim",
-					"Storm King's Thunder",
-					"Red Squares"];
+					"Storm King's Thunder"];
 
 /* Add all the images registered in the array to the gallery */
 function initGallery() {
