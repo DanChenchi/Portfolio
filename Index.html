@@ -19,23 +19,21 @@
 
     <body>
 	  
-		<nav class="black" role="navigation">
+		<nav class="black" role="navigation" id="top">
 			<div class="nav-wrapper container">
-				<a href="Index.html" id="logo" class="brand-logo"><i class="material-icons">home</i></a>
+				<span id="logo" class="brand-logo">Code Strophes</span>
 				
 				<ul class="right hide-on-med-and-down">
-					<li><a href="#">Search</a></li>
-					<li><a href="#">About the author</a></li>
-					<li><a href="#">Albums</a></li>
-					<li><a href="#">Works and Plans</a></li>
+					<li><a href="#gallery">Gallery</a></li>
+					<li><a href="#about-me">About Me</a></li>
+					<li><a href="#my-skills">My Skills</a></li>
 				</ul>
 				
 				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 				<ul id="nav-mobile" class="side-nav">
-					<li><a href="#">Search</a></li>
-					<li><a href="#">About the author</a></li>
-					<li><a href="#">Albums</a></li>
-					<li><a href="#">Works and Plans</a></li>
+					<li><a href="#gallery" class="grey-text">Gallery</a></li>
+					<li><a href="#about-me" class="grey-text">About Me</a></li>
+					<li><a href="#my-skills" class="grey-text">My Skills</a></li>
 				</ul>
 				
 			</div>
@@ -118,12 +116,30 @@
 			</div> <!-- End Container -->
 		</div><!-- End Gallery Section -->
 
-		<div class="section grey darken-2" id="resume">
+		<!-- About Me Section -->
+		<div class="section grey darken-2" id="about-me">
 			<div class="container">
-
+				<h1 class="center white-text">About Me</h1>
+				<p class="flow-text my-presentation">
+					My name is Danilo Chenchi. I'm a Developer and Computer Scientist from Sorocaba - SP Brazil.<br>
+					<br>
+					I code since 2007 as a hobby, and I've found in this hobby the marketplace where I belong.<br>
+					I've experienced various programming languages in my studies, and loved every single one.<br>
+					Everything they have in commom is the diversity, and that is the best part, because the best tool is the one that suits your needs.
+					I always want to experience the new, being versatile all the time.<br>
+					<br>
+					This page is meant to express my vision on the ability these languages have to communicate.
+				</p>
+			</div>
+		</div><!-- End About Me Section -->
+		
+		<!-- Resume Section -->
+		<div class="section grey darken-1" id="my-skills">
+			<div class="container">
+				
+				<h1 class="center white-text">My Skills</h1>
+				
 				<div class="row">
-
-					<br><br><br><br><br>
 
 					<div class="col s10 l8 grey darken-3 resume-left">
 						<h3>Design</h3>
@@ -156,11 +172,8 @@
 				</div>
 
 			</div>
-		</div>
+		</div><!-- End Resume Section -->
 		
-		<div class="section grey darken-1" id="about-me">
-			<h1 class="center white-text">About Me</h1>
-		</div>
 
 		<footer class="page-footer white-text grey darken-3">
 
@@ -169,22 +182,39 @@
 					<div class="col s12 l6">
 						<h5>Danilo Chenchi</h5>
 						
-						<div class="col s12">
-							<a href="#introduction" class="breadcrumb">Introduction</a>
-							<a href="#gallery" class="breadcrumb">Gallery</a>
-							<a href="#resume" class="breadcrumb">Resume</a>
-							<a href="#about-me" class="breadcrumb">About Me</a>
-						</div>
+						<ul>
+							<li>
+								<a class="footer-nav" href="https://www.google.com.br/maps/place/Sorocaba+-+SP/@-23.4698995,-47.506671,12z/data=!3m1!4b1!4m5!3m4!1s0x94c58abceb48f503:0x947f99ac59d0781b!8m2!3d-23.5015338!4d-47.4525944" target="_blank">
+									<i class="material-icons" style="font-size: 16px">place</i> Sorocaba - SP, Brazil
+								</a>
+							</li>
+							
+							<li>
+								<a class="footer-nav" href="mailto:dan.chenchi@gmail.com" target="_top">
+									<i class="material-icons" style="font-size: 16px">email</i> dan.chenchi@gmail.com
+								</a>
+							</li>
+							
+							<li>
+								<a class="footer-nav" href="tel:+5515997860571">
+									<i class="material-icons" style="font-size: 16px">phone</i> +55 15 99786-0571
+								</a>
+							</li>
+						</ul>
+						
 
 					</div>
 					
 					<div class="col s12 l2 offset-l4">
-						<h5>Contact</h5>
+						<h5>Navigate</h5>
+						
 						<ul>
-							<li><i class="material-icons" style="font-size: 16px">place</i> Sorocaba - SP, Brazil</li>
-							<li><i class="material-icons" style="font-size: 16px">email</i> dan.chenchi@gmail.com</li>
-							<li><i class="material-icons" style="font-size: 16px">phone</i> +55 15 99786-0571</li>
+							<li><a href="#top" class="footer-nav">Back to the top</a></li>
+							<li><a href="#gallery" class="footer-nav">Gallery</a></li>
+							<li><a href="#about-me" class="footer-nav">About me</a></li>
+							<li><a href="#my-skills" class="footer-nav">My skills</a></li>
 						</ul>
+						
 					</div>
 					
 				</div> <!-- End Row -->
