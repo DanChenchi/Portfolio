@@ -1,33 +1,48 @@
 @import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do');
 
+.resume-left, .resume-right {
+	color: white;
+	
+	/* Z-Index: 3 */	
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+.resume-left:hover, .resume-right:hover {
+	/* Z-Index: 4 */
+	box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+}
+
 .resume-left {
 	text-align: right;
-	color: white;
-	border-right: 5px solid #ffffff;
+	border-right: 5px solid white;
 }
 
 .resume-right {
 	text-align: left;
-	color: white;
-	border-left: 5px solid #ffffff;
-}
-
-.resume-left:hover {
-  opacity: .6;
-}
-
-.resume-right:hover {
-  opacity: .6;
+	border-left: 5px solid white;
 }
 
 .card .card-title {
-  font-size: .9em;
+	font-size: .9em;
 }
 
 .page-title {
 	font-size: 6.0rem;
 }
 
-.intro {
+.intro, .brand-logo {
 	font-family: 'Nothing You Could Do', cursive;
+}
+
+.footer-nav {
+	color: white !important;
+}
+.footer-nav:hover {
+	color: #9e9e9e !important;
+}
+
+.my-presentation {
+	color: white;
+	font-size: 1.5em;
+	font-weight: light;
 }
