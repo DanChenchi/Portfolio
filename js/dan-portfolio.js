@@ -9,11 +9,13 @@ var images_array = [
 					"You gonna love it HD.png",
 					"Quote cite.png",
 					"hello.png",
+					"Lisp lists of lists.png",
 					];
 var titles_array = [
 					"You gonna love IT",
 					"Quote someone today",
 					"Hello World!",
+					"Lisp lists of lists of...",
 					];
 
 /* Add all the images registered in the array to the gallery */
@@ -29,8 +31,8 @@ function initGallery() {
 
 /*
 Thumbnail
-<div class="col s12 m6 l4">
-	<div class="card">
+<div class="col s4">
+	<div class="card small">
 		<div class="card-image">
 			<img class="materialboxed" data-caption="title" src="path/image.ext">
 		</div>
