@@ -46,3 +46,18 @@
 	font-size: 1.5em;
 	font-weight: light;
 }
+
+.nav-menu {
+	float: right !important;
+	right: 0.5rem;
+	padding: 0;
+}
+
+.contact-icon{
+	font-size: 2.5em !important;
+}
+@media only screen and (max-width: 992px) {
+	.nav-menu {
+		display: none !important;
+	}
+}
