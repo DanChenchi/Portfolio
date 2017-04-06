@@ -4,7 +4,8 @@
 		<title>Code Strophes - By Dan</title>
 
 		<!--Import Google Icon Font-->
-		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+		
 		<!--Import materialize.css-->
 		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 		<link type="text/css" rel="stylesheet" href="css/materialize-custom.css"  media="screen,projection"/>
@@ -19,32 +20,34 @@
 
     <body>
 	  
-		<nav class="black" role="navigation" id="top">
-			<div class="nav-wrapper container">
-				<span id="logo" class="brand-logo">Code Strophes</span>
-				
-				<ul class="nav-menu">
-					<li><a href="#gallery">Gallery</a></li>
-					<li><a href="#about-me">About Me</a></li>
-					<li><a href="#my-skills">My Skills</a></li>
-				</ul>
-				
-				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-				<ul id="nav-mobile" class="side-nav">
-					<li><a href="#gallery" class="grey-text">Gallery</a></li>
-					<li><a href="#about-me" class="grey-text">About Me</a></li>
-					<li><a href="#my-skills" class="grey-text">My Skills</a></li>
-				</ul>
-				
-			</div>
-		</nav>
+		<div class="navbar-fixed">
+			<nav class="black" role="navigation" id="top">
+				<div class="nav-wrapper container">
+					<a href="#introduction"><span id="logo" class="brand-logo">Code Strophes</span></a>
+					
+					<ul class="nav-menu">
+						<li><a href="#gallery">Gallery</a></li>
+						<li><a href="#about-me">About Me</a></li>
+						<li><a href="#my-skills">My Skills</a></li>
+					</ul>
+					
+					<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="fa fa-bars"></i></a>
+					<ul id="nav-mobile" class="side-nav">
+						<li><a href="#gallery" class="grey-text">Gallery</a></li>
+						<li><a href="#about-me" class="grey-text">About Me</a></li>
+						<li><a href="#my-skills" class="grey-text">My Skills</a></li>
+					</ul>
+					
+				</div>
+			</nav>
+		</div>
 		
 		<!-- Fixed Action Button -->
 		<div class="fixed-action-btn">
 			<!-- <a class="btn-floating btn-large light-blue"> -->
 			<a class="btn-floating btn-large red">
 				<!-- <i class="large material-icons" style="font-size:42px">account_circle</i> -->
-				<i class="material-icons contact-icon">account_circle</i>
+				<i class="fa fa-user-circle"></i>
 			</a>
 			<ul>
 				<li>
@@ -97,7 +100,7 @@
 		<!-- Gallery Section -->
 		<div class="section grey darken-3" id="gallery">
 			<div class="container">
-				<br><br><br><br><br><br>
+				<br><br><br>
 
 				<div class="row" id="thumb-galley">
 				
@@ -105,7 +108,7 @@
 					
 				</div>
 				
-				<br><br><br><br><br><br>
+				<br><br><br>
 			</div> <!-- End Container -->
 		</div><!-- End Gallery Section -->
 
@@ -137,7 +140,7 @@
 
 					<div class="col s10 l8 grey darken-3 resume-left">
 						<h3>Design</h3>
-						<p class="flow-text">Material Design, Pixel Art, UX Focus</p>
+						<p class="flow-text">Material Design, Pixel Art, UI/UX</p>
 					</div>
 
 					<br><br><br><br><br><br><br><br><br><br>
@@ -151,7 +154,7 @@
 
 					<div class="col s10 l8 grey darken-3 resume-left">
 						<h3>Back-end</h3>
-						<p class="flow-text">Java, Python, C++</p>
+						<p class="flow-text">Java, Python, C++, Cobol</p>
 					</div>
 
 					<br><br><br><br><br><br><br><br><br><br>
@@ -179,19 +182,37 @@
 						<ul>
 							<li>
 								<a class="footer-nav" href="https://www.google.com.br/maps/place/Sorocaba+-+SP/@-23.4698995,-47.506671,12z/data=!3m1!4b1!4m5!3m4!1s0x94c58abceb48f503:0x947f99ac59d0781b!8m2!3d-23.5015338!4d-47.4525944" target="_blank">
-									<i class="material-icons" style="font-size: 16px">place</i> Sorocaba - SP, Brazil
+									<i class="fa fa-map-marker" style="font-size: 16px"></i> Sorocaba - SP, Brazil
 								</a>
 							</li>
 							
 							<li>
 								<a class="footer-nav" href="mailto:dan.chenchi@gmail.com" target="_top">
-									<i class="material-icons" style="font-size: 16px">email</i> dan.chenchi@gmail.com
+									<i class="fa fa-envelope" style="font-size: 16px"></i> dan.chenchi@gmail.com
 								</a>
 							</li>
 							
 							<li>
 								<a class="footer-nav" href="tel:+5515997860571">
-									<i class="material-icons" style="font-size: 16px">phone</i> +55 15 99786-0571
+									<i class="fa fa-phone" style="font-size: 16px"></i> +55 15 99786-0571
+								</a>
+							</li>
+							
+							<li>
+								<a class="white-text" href="https://www.facebook.com/dan.chenchi" target="_blank">
+									<i class="fa fa-facebook"></i>
+								</a>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<a class="white-text" href="https://twitter.com/DAN_ne_se" target="_blank">
+									<i class="fa fa-twitter"></i>
+								</a>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<a class="white-text" href="https://www.linkedin.com/in/danchenchi/" target="_blank">
+									<i class="fa fa-linkedin"></i>
+								</a>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<a class="white-text" href="https://github.com/DanChenchi" target="_blank">
+									<i class="fa fa-github"></i>
 								</a>
 							</li>
 						</ul>
@@ -241,6 +262,7 @@
 			initGallery();
 			
 		})(jQuery); // end of jQuery name space
+		
 		</script>
 	</body>
 </html>
