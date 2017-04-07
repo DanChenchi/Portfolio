@@ -1,4 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:400');
+
+body {
+	font-family: 'Josefin Slab', serif;
+}
+
+nav {
+	background: black;
+}
+
+.nav-menu li:hover {
+	background-color: #303030;
+}
 
 .resume-left, .resume-right {
 	color: white;
@@ -31,7 +43,7 @@
 }
 
 .intro, .brand-logo {
-	font-family: 'Nothing You Could Do', cursive;
+	letter-spacing: .25rem;
 }
 
 .footer-nav {
@@ -42,9 +54,8 @@
 }
 
 .my-presentation {
+	font-family: 'Josefin Slab', serif;
 	color: white;
-	font-size: 1.5em;
-	font-weight: light;
 }
 
 .contact-icon{
@@ -72,7 +83,7 @@
   z-index: 998;
 }
 
-/* Remove the left border from the materialize styl */
+/* Remove the left border from the materialize style */
 .table-of-contents a, .table-of-contents a:hover, .table-of-contents a.active{
 	border-left: none;
 }
@@ -96,20 +107,17 @@
 .table-of-contents a::before{
 	padding-right: 10px;
     font-family: "FontAwesome";
-	font-size: .5rem;
 	content: "\f1db";
 }
 
 .table-of-contents a:hover {
 	color: #a8a8a8;
-	padding-left: 19px;
 	opacity: 1;
-	font-size: .8rem;
 }
 
 .table-of-contents a.active::before {
     font-family: "FontAwesome";
-	font-size: .7rem;
+	font-size: .8rem;
 	content: "\f111";
 }
 
