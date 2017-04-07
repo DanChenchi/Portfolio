@@ -72,16 +72,25 @@
   z-index: 998;
 }
 
+/* Remove the left border from the materialize styl */
+.table-of-contents a, .table-of-contents a:hover, .table-of-contents a.active{
+	border-left: none;
+}
+
 .table-of-contents a {
 	color: white;
-	padding-left: 20px;
-	height: 1rem;
-	line-height: 1rem;
-	letter-spacing: .4;
-	display: inline-block;
-	opacity: 0.3;
 	font-size: .7rem;
-	border-left: none;
+}
+.table-of-contents a span {
+	opacity: 0;
+}
+
+.table-of-contents a span:hover {
+	opacity: 1;
+}
+
+.table-of-contents a.active span{
+	opacity: 1;
 }
 
 .table-of-contents a::before{
@@ -96,20 +105,15 @@
 	padding-left: 19px;
 	opacity: 1;
 	font-size: .8rem;
-	border-left: none;
 }
 
 .table-of-contents a.active::before {
-	padding-right: 10px;
     font-family: "FontAwesome";
 	font-size: .7rem;
 	content: "\f111";
 }
 
 .table-of-contents a.active {
-	font-weight: 500;
-	padding-left: 18px;
 	opacity: 1;
 	font-size: 1.2rem;
-	border-left: none;
 }
